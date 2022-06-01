@@ -30,6 +30,7 @@ p{
     font-weight: 200;
     letter-spacing: 0.05rem;
 }
+
 .container{
     min-height: 100vh;
     width: 100%;
@@ -53,11 +54,11 @@ p{
     background-image: url(../img/2.jpg);
     background-size: cover;
     background-position: top center;
-    position: relative;
+    position:relative;
     z-index: 1;
 }
 #presentation h1 {
-    display: block;
+    display: flex;
     width: fit-content;
     font-size: 5rem;
     position: relative;
@@ -84,7 +85,7 @@ p{
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: .7s ease;
     transition-property: background-color, color;
 }
@@ -200,6 +201,21 @@ p{
 #portfolio .project-item:hover .project-img img{
     transform: scale(1.1);
 }
+#portfolio .voltar-topo{
+    border: 0;
+    display: flex;
+    position: fixed;
+    color:gold;
+    width: 42px;
+    height: 45px;
+    padding-top: 7px;
+    font-size: 7rem;
+    align-items: center;
+    bottom: 10%; 
+    left: 90%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.4;
+}
 
 /*keyframes*/
 
@@ -247,3 +263,25 @@ p{
         flex-direction: row-reverse;
     }
 }
+
+.eva{
+    height: 90px;
+    width: 80px;
+    animation-duration: 3s;
+    animation-name: slidein ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+
+
+@keyframes slidein {
+    from {
+        margin-left: 290%;
+    }
+  
+    to {
+      margin-left: 235%;
+    }
+  }
