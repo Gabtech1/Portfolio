@@ -265,9 +265,10 @@ p{
 }
 
 .eva{
-    height: 90px;
-    width: 80px;
-    animation-duration: 3s;
+    margin-top: 15px;
+    height: 70px;
+    width: 60px;
+    animation-duration: 5s;
     animation-name: slidein ;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -278,10 +279,24 @@ p{
 
 @keyframes slidein {
     from {
-        margin-left: 290%;
+        margin-left: 1%;
     }
   
     to {
-      margin-left: 235%;
+      margin-left: 5%;
     }
+  }
+
+  #iconClicavel{
+      color: white;
+      font-size: 1.4rem;
+      
+  }
+  .test{
+    color: white;
+    font-size: 1.2rem;
+    animation-duration: 5s;
+    animation-name: slidein ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
