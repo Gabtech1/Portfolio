@@ -5,89 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+     <!--owl css-->
+     <link rel="stylesheet" href="/css/owl/owl.carousel.min.css">
+     <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css">
+
     <title>Portfólio</title>
 </head>
 
 <body>
     
     <section id="presentation">
-        <a href="#contato" id="iconClicavel"><img class="eva" src="./img/eva.png"></a>
-        <p class="test">Entre em contato</p>
+        <a href="#contato" id="iconClicavel"><img class="eva" src="./img/inverso.png"></a>
+        <p class="contactIcon">Entre em contato</p>
         <div class="presentation container">
             <div>
                 <h1>Olá, Bem vindo<span></span></h1>
                 <h1>Meu nome é<span></span></h1> 
                 <h1>Gabriel Aparecido<span></span></h1>
                 <a href="#portfolio" type="button" class="cta">Portfólio</a>
-                <a href="#" type="button" class="cta">Tecnologias</a>
-                <a href="#" type="button" class="cta">Sobre mim</a>
+                <a href="#Tecnologias" type="button" class="cta">Tecnologias</a>
+                <a href="#Sobre-mim" type="button" class="cta">Sobre mim</a>
             </div>          
         </div>
     </section>
 
     <section id="portfolio">
-        <div class="portfolio container">
-            <div class="portfolio header">
-                <h1 class="section-title"><span>Portfólio</span></h1>
-            </div>
-            <div class="all-projects">
 
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Projeto 1</h1>
-                        <h2>Primeiro</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
-                            aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
-                            ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
-                            urna vitae dui.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/img-1.png" alt="img">
-                    </div>
+        <!--Portfólio título-->
+    
+        <div class="portfolioHeader">
+            <h1 class="section-title"><span>Portfólio</span></h1>
+        </div>
+
+        <!--Portfólio carrosel-->
+
+        <div class="portfolioCarousel">
+            <div class="owl-carousel owl-theme">
+
+                <div class="projectInfo">
+                    <h1>Netflix Clone</h1>
+                    <img class="box-project" src="/img/1.jpg" alt="">
+                    <p>Primeiro projeto realizado utilizando html5 e css.</p>
                 </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Projeto 2</h1>
-                        <h2>Segundo</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
-                            aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
-                            ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
-                            urna vitae dui.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/1.jpg" alt="img">
-                    </div>
+                <div class="projectInfo">
+                    <h1>Jump Game</h1>
+                    <img class="box-project" src="/img/2.jpg" alt="">
+                    <p>Famoso jogo do dinossauro do Google, reestilizado.</p>
                 </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Projeto 3</h1>
-                        <h2>Terceiro</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
-                            aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
-                            ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
-                            urna vitae dui.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/5.jpg" alt="img">
-                    </div>
+                <div class="projectInfo">
+                    <h1>Resgate</h1>
+                    <img class="box-project" src="/img/5.jpg" alt="">
+                    <p>Inspirado nos famosos space shooters, jogo com objetivo de destruir os inimigos e resgatar o aliado.</p>
                 </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Projeto 4</h1>
-                        <h2>Quarto</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
-                            aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
-                            ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
-                            urna vitae dui.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./img/6.jpg" alt="img">
-                    </div>
+                <div class="projectInfo">
+                    <h1>Em breve...</h1>
+                    <img class="box-project" src="/img/soon.jpg" alt="">
+                    <p>Trabalhando em novos projetos.</p>
+                </div>
+                </div>
+                <a href="#presentation" class="voltar-topo">^</a>
+            </div>
+    
+    </section>
+
+    <section id="Tecnologias">
+
+        <!--Tecnologias título-->
+    
+        <div class="tecnologiasHeader">
+            <h1 class="section-title"><span>Tecnologias</span></h1>
+        </div>
+
+        <h2 class="tecTitle">Principais habilidades</h2>
+        <!--Tecnologias carrosel-->
+
+        <div class="tecnologiacontainer">
+                <div class="tecnologiaIcon">
+                    <img class="box-icon" src="/img/html5.png" alt="">
+                    <h1>HTML 5</h1>
+                </div>
+                <div class="tecnologiaIcon">
+                    <img class="box-icon" src="/img/css.png" alt="">
+                    <h1>CSS</h1>
+                </div>
+                <div class="tecnologiaIcon">
+                    <img class="box-icon" src="/img/js.png" alt="">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="tecnologiaIcon">
+                    <img class="box-icon" src="/img/Git.png" alt="">
+                    <h1>Git</h1>
+                </div>
+                <div class="tecnologiaIcon">
+                    <img class="box-icon" src="/img/react.png" alt="">
+                    <h1>React</h1>
                 </div>
             </div>
-            <a href="#presentation" class="voltar-topo">^</a>
-        </div>
+
+            <h2 class="tecTitle2">Tecnologias em estudo</h2>
+
+            <div class="tecnologiacontainer">
+                    <div class="tecnologiaIcon">
+                        <img class="box-icon" src="/img/angular.png" alt="">
+                        <h1>Angular</h1>
+                    </div>
+                    <div class="tecnologiaIcon">
+                        <img class="box-icon" src="/img/sqlicon.png" alt="">
+                        <h1>SQL</h1>
+                    </div>
+                    <div class="tecnologiaIcon">
+                        <img class="box-icon" src="/img/Kotlin_Icon.png" alt="">
+                        <h1>Kotlin</h1>
+                    </div>
+                    <div class="tecnologiaIcon">
+                        <img class="box-icon" src="/img/typescripticon.png" alt="">
+                        <h1>Typescript</h1>
+                    </div>
+                    <div class="tecnologiaIcon">
+                        <img class="box-icon" src="/img/node-js.png" alt="">
+                        <h1>Node.js</h1>
+                    </div>
+                </div>
     </section>
-    
+
+    <section id="Sobre-mim">
+
+        <div class="aboutHeader">
+            <h1 class="section-title"><span>Sobre mim</span></h1>
+        </div>
+        
+            <div class="aboutContainer">
+                <div class="aboutImg">
+                    <img src="/img/1.jpg" alt="">    
+                </div>
+                <div class="aboutText">
+                    <h1>Olá, sou o Gabriel Aparecido</h1>
+                    <h2>Desenvolvedor Front-End</h2>
+                    <p>Atualmente moro em Itatiba/SP, sou formado em um curso técnico em informática onde experienciei meu primeiro contato com a programação, e desde então quis seguir em frente na área. Desde 2021 venho realizando cursos online, adquirindo novas experiências em bootcamps, em busca de uma oportunidade profissional. Desenvolvi grandes habilidades no Front-End, e estou estudando outras linguagens para me tornar Full-Stack.</p>
+                </div>
+            </div>      
+    </section>
+
+    <footer class="footerContainer" id="contato">
+        <div class="footerItem">
+            <a href="https://github.com/Gabtech1"><img class="footer-icon" src="./img/github.png"></a>
+            <h1>GitHub</h1>
+        </div>
+        <div class="footerItem">
+            <a href="https://www.linkedin.com/in/gabriel-aparecido-da-paix%C3%A3o-118a88226/"><img class="footer-icon" src="./img/linkedin.png"></a>
+            <h1>LinkedIn</h1>
+        </div>
+        <div class="footerItem">
+            <h1 id="ano">© 2022</h1>
+        </div>
+        <div class="footerItem">
+            <a href="mailto:GabrielAp.dev@hotmail.com" ><img class="footer-icon" src="./img/email.png"></a>
+            <h1>E-mail</h1>
+        </div>
+        <div class="footerItem">
+            <img class="footer-icon" id="loc" src="/img/locIcon.png" alt="">
+            <h1>São Paulo, Brasil</h1>
+        </div>
+              
+
+    </footer>
+
+
+
+
+
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>
