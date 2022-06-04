@@ -1,5 +1,7 @@
+/*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,200;1,500&display=swap');
 
+/* Configurção dos principais elementos*/
 *{
     padding: 0;
     margin: 0;
@@ -9,13 +11,11 @@ body{
     background-image: url(../img/12.jpg);
     background-size:contain;
 }
-
 html{
     font-size: 10px;
     font-family: 'IBM Plex Serif', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
 }
-
 a{
     text-decoration: none;
 }
@@ -53,6 +53,27 @@ p{
 }
 /* Seção de apresentação*/
 
+.eva{
+    margin-top: 15px;
+    height: 50px;
+    width: 40px;
+    animation-duration: 5s;
+    animation-name: slidein ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 0.5s ease transform;   
+}
+.eva:hover{
+    transform: scale(1.4);
+}
+.contactIcon{
+    color: white;
+    font-size: 1.2rem;
+    animation-duration: 5s;
+    animation-name: slidein2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 #presentation{
     background-image: url(../img/2.jpg);
     background-size: cover;
@@ -116,8 +137,6 @@ p{
 #presentation h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
-
-
 #presentation::after{
     content: '';
     position: absolute;
@@ -135,15 +154,12 @@ p{
 #portfolio{
     min-height: 100vh;   
 }
-
 #portfolio .portfolio{
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
-
 }
-
 #portfolio .portfolioHeader h1{
     margin-top: 90px;
     margin-bottom: 100px;
@@ -160,8 +176,10 @@ p{
     text-align: center;
     font-weight: 200;
     color: white;
-    margin-top: 30px;
-    
+    margin-top: 30px; 
+}
+.portfolioCarousel{
+    margin: 10px;
 }
 .box-project{   
     height: fit-content;
@@ -172,7 +190,7 @@ p{
 .box-project:hover{
     transform: scale(1.02);
 }
-
+/*Botão voltar topo*/
 #portfolio .voltar-topo{
     border: 0;
     display: flex;
@@ -186,18 +204,133 @@ p{
     bottom: 10%; 
     left: 90%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: 1;
     transition: 0.7s ease transform;
-
 }
-
 .voltar-topo:hover{
     transform: scale(1.2);
 }
 
-/*keyframes*/
+/* Seção das Tecnologias */
+.tecTitle{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+.tecTitle2{
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+.tecnologiacontainer{
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position:relative;  
+}
+.tecnologiaIcon{
+    padding: 10px 30px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border: 1.5px solid white;
+    margin-top: 70px;
+    transition: .7s ease;
+    transition-property: background-color, color;
+}
+.tecnologiaIcon:hover{
+    background-color: white;
+    color:black;  
+}
 
+.box-icon{
+    width: 100%;
+    height: 100px;  
+}
+.box-icon:hover{
+    transform: scale(1.2);
+    transition: 0.8s ease transform;    
+}
+
+/* Seção Sobre mim */
+.aboutHeader{
+    margin-bottom: -60px;
+}
+.aboutContainer{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 50px;
+    align-items: center;
+}
+.aboutImg:hover{
+    transform: scale(1.04);
+    transition: 3s ease transform;
+}
+.aboutText p{
+    font-size: 2.5rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+    color: white;
+    text-align:center;
+    inline-size: 400px;      
+}
+.aboutText h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    position: relative;
+    color: white;
+}
+.aboutText h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+    text-align: center;
+    color: purple;
+    animation: text_reveal_name 10s  infinite;
+}
+
+/*Footer*/
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-25px;
+    background-color: rgb(33, 33, 34);  
+}
+.footerItem{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-align: center;
+    color: purple;
+    animation: text_reveal_name 10s  infinite;   
+}
+.footer-icon{
+    width: 35px;
+    margin: 10px;   
+}
+.footer-icon:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease transform;
+}
+
+/*keyframes*/
 @keyframes text_reveal{
     100%{
         color: white;
@@ -242,184 +375,7 @@ p{
     }
   }
 
-
-.eva{
-    margin-top: 15px;
-    height: 50px;
-    width: 40px;
-    animation-duration: 5s;
-    animation-name: slidein ;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: 0.5s ease transform;
-    
-}
-.eva:hover{
-    transform: scale(1.4);
-}
-
-.contactIcon{
-    color: white;
-    font-size: 1.2rem;
-    animation-duration: 5s;
-    animation-name: slidein2;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-
-  .box-filme{
-    
-      height: 500px;
-    
-  }
-
-.portfolioCarousel{
-    margin: 10px;
-
-}
-.box-project{   
-    height:fit-content;
-     width: fit-content;
-     display: block;
- }
-
- .tecnologiaIcon{
-    padding: 10px 30px;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    border: 1.5px solid white;
-    margin-top: 70px;
-    transition: .7s ease;
-    transition-property: background-color, color;
-}
-.tecnologiaIcon:hover{
-    background-color: white;
-    color:black;
-    
-}
-
-.box-icon{
-    width: 100%;
-    height: 100px;
-    
-}
-.box-icon:hover{
-    transform: scale(1.2);
-    transition: 0.8s ease transform;
-
-      
-}
-.tecnologiacontainer{
-    min-height: 30vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    position:relative;
-
-    
-}
-.tecTitle{
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2.7rem;
-    font-weight: 500;
-
-}
-.tecTitle2{
-    color: white;
-    text-align: center;
-    margin-top: 60px;
-    font-size: 2.7rem;
-    font-weight: 500;
-}
-
-
-.aboutHeader{
-    margin-bottom: -60px;
-}
-.aboutContainer{
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 40px;
-    margin-top: 50px;
-    align-items: center;
-}
-
-.aboutImg:hover{
-    transform: scale(1.04);
-    transition: 3s ease transform;
-}
-.aboutText p{
-    font-size: 2.5rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 0.07rem;
-    color: white;
-    text-align:center;
-    inline-size: 400px;  
-    
-}
-.aboutText h1{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 2.8rem;
-    position: relative;
-    color: white;
-}
-
-.aboutText h2{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 2.3rem;
-    text-align: center;
-    color: purple;
-    animation: text_reveal_name 10s  infinite;
-}
-
-.footerContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:-25px;
-    background-color: rgb(33, 33, 34);  
-}
-.footerItem{
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 1rem;
-    text-align: center;
-    color: purple;
-    animation: text_reveal_name 10s  infinite;
-    
-    
-    
-}
-.footer-icon{
-    width: 35px;
-    margin: 10px;
-    
-    
-}
-.footer-icon:hover{
-    transform: scale(1.2);
-    transition: 0.5s ease transform;
-}
-
-#ano{
-    font-size: 1.5rem;
-    margin-top: 103px;
-    color: rgb(88, 182, 245);
-    animation: text_reveal_name 10s  infinite;
-}
+/*Media query*/
 
 @media  screen and (max-width:788px){
     #Tecnologias .tecnologiacontainer{
