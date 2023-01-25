@@ -254,7 +254,7 @@ p{
     min-height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 50px;
 
 
@@ -286,7 +286,6 @@ p{
 }
 
 .contact-img{
-    margin-left: 150px;
     border-radius: 20px;
     height: 300px;
     width: 500px;
@@ -424,6 +423,6 @@ p{
 
     @media  screen and (max-width:788px){
         .container{
-            margin:10px;
+            margin:5px;
         }
     }
