@@ -347,21 +347,9 @@ p{
     }
 }
 
-@media  screen and (max-width:788px){
-    .contactContainer{
-        flex-direction: column;
-        height: 50%;
-        justify-content: center;
-        align-items: center;
-        margin-right: -40px;
-    }
-}
 
-@media  screen and (max-width:788px){
-    .contact-img{
-        display: none;
-    }
-}
+
+
 
 
 .line-1{
