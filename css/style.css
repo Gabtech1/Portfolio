@@ -249,30 +249,26 @@ p{
 
 
 /* Seção contato  */
+
 .contactContainer{
     margin: 20px;
-    min-height: 80vh;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+    justify-content: center;
     margin-top: 50px;
-
-
+    
 }
 
 .redes{
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-   
     margin: 10px;
-    margin-right: 50px;
-
-
 }
 
 .redes p{
-    margin: 5px;
-    margin-right: 20px;
     color: white;
     font-size: 15px;
     text-align: center;
@@ -284,14 +280,6 @@ p{
     margin: 10px;
     cursor: pointer;
 }
-
-.contact-img{
-    border-radius: 20px;
-    height: 300px;
-    width: 500px;
-    opacity: 80%;
-}
-
 
 
 
