@@ -1,9 +1,12 @@
 <h1 align="center"> Portfólio </h1>
 
 <p align="center">
-Construção de meu portfólio, estarei sempre adicionando novos trabalhos realizados. <br/>
+Projeto realizado durante tech academy, construção de um modelo de portfólio. <br/>
+  <a href="gabdev.com.br">Acesse meu Portfolio atual</a>
 </p>
 
+<br>
+<br>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -17,7 +20,7 @@ Construção de meu portfólio, estarei sempre adicionando novos trabalhos reali
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
+  <img src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,13 +29,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Git e Github
-- Figma
 
 ## 💻 Projeto
 
-Projeto de portfolio para registrar experiências ao longo dos estudos.
+Projeto de portfolio totalmente reestilizado para registrar experiências ao longo dos estudos.
 
-- [Acesse o projeto finalizado, online](https://gabtech1.github.io/Portfolio/)
+- [Acesse a amostra deste projeto](https://gabtech1.github.io/Portfolio/)
 
 
 
