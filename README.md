@@ -2,7 +2,7 @@
 
 <p align="center">
 Projeto realizado durante tech academy, construção de um modelo de portfólio. <br/>
-  <a href="gabdev.com.br">Acesse meu Portfolio atual</a>
+  <a url="https://www.gabdev.com.br">Acesse meu Portfolio atual</a>
 </p>
 
 <br>
